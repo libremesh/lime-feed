@@ -1,44 +1,77 @@
 Package: profile-es.hackmeeting.org-hm2019generic
-Version: git-20.289.57088-389613e
+Version: git-20.305.82751-fc79049
 Depends: libc, lime-system, prometheus-node-exporter-lua, prometheus-node-exporter-lua-wifi, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-openwrt, lime-system, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-proto-wan, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-docs-minimal, first-boot-wizard, lime-docs, lime-hwd-ground-routing, lime-debug, ubus-lime-batman-adv, ubus-lime-fbw, pirania, pirania-app, shared-state-pirania, shared-state-persist
 Section: lime
 Architecture: all
 Installed-Size: 846
-Filename: profile-es.hackmeeting.org-hm2019generic_git-20.289.57088-389613e_all.ipk
-Size: 1835
-SHA256sum: e1601f56a0da8215de56f002e62e04e64a040933a4fb6a61ee297c289bde1686
+Filename: profile-es.hackmeeting.org-hm2019generic_git-20.305.82751-fc79049_all.ipk
+Size: 1845
+SHA256sum: 4aa55b561365d41717a6592a7e3005a22a8dfd7b39391ae5f8722fee515ce8a5
 Description:  Network used for Iberic Hackmeeting 2019 in Errekaleor
 
-Package: profile-libremesh-adhoc
-Version: git-20.289.57088-389613e
+Package: profile-freifunk-80211s-sae-batadv-only
+Version: git-20.305.82751-fc79049
 Depends: libc, lime-system
 Section: lime
 Architecture: all
-Installed-Size: 306
-Filename: profile-libremesh-adhoc_git-20.289.57088-389613e_all.ipk
-Size: 1016
-SHA256sum: 2f267289c91561d044ee2e8b9c24a55d0f40a424ad624c15eb0bf080ef6e20d2
+Installed-Size: 871
+Filename: profile-freifunk-80211s-sae-batadv-only_git-20.305.82751-fc79049_all.ipk
+Size: 1631
+SHA256sum: 4e7c329d03e7f39a32e2794f5bcb97faf61f71051accf41d9a6366b3580e0b94
+Description:  Use 802.11s with SAE for mesh, route with batman-adv only
+
+Package: profile-freifunk-80211s-sae-bmx7-batadv
+Version: git-20.305.82751-fc79049
+Depends: libc, lime-system, wpad-mesh-wolfssl, wpa-cli, kmod-batman-adv, bmx7, bmx7-iwinfo, bmx7-json, bmx7-sms, bmx7-table, bmx7-tun, bmx7-uci-config, lime-proto-batadv, bmx7-auto-gw-mode, lime-proto-bmx7, lime-proto-anygw, uhttpd-mod-lua, shared-state, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-bat_hosts, wifi-unstuck-wa
+Section: lime
+Architecture: all
+Installed-Size: 877
+Filename: profile-freifunk-80211s-sae-bmx7-batadv_git-20.305.82751-fc79049_all.ipk
+Size: 1792
+SHA256sum: f8e14fbe2d5372b1a2fb6d237948962223260e07b75004f5ff481ec940d0c3b4
+Description:  Use 802.11s with SAE for mesh, route with bmx7 and batman-adv
+
+Package: profile-freifunk-80211s-sae-bmx7-only
+Version: git-20.305.82751-fc79049
+Depends: libc, lime-system, wpad-mesh-wolfssl, wpa-cli, bmx7, bmx7-iwinfo, bmx7-json, bmx7-sms, bmx7-table, bmx7-tun, bmx7-uci-config, bmx7-auto-gw-mode, lime-proto-bmx7, lime-proto-anygw, uhttpd-mod-lua, shared-state, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, wifi-unstuck-wa
+Section: lime
+Architecture: all
+Installed-Size: 869
+Filename: profile-freifunk-80211s-sae-bmx7-only_git-20.305.82751-fc79049_all.ipk
+Size: 1759
+SHA256sum: 0c767d3c612d8dbe3c5651dcdeaa9da5dc05aa0189b2f260750ff583ca5dfd5e
+Description:  Use 802.11s with SAE for mesh, route with bmx7 only
+
+Package: profile-libremesh-adhoc
+Version: git-20.305.82751-fc79049
+Depends: libc, lime-system
+Section: lime
+Architecture: all
+Installed-Size: 308
+Filename: profile-libremesh-adhoc_git-20.305.82751-fc79049_all.ipk
+Size: 1023
+SHA256sum: c2ff1682d80e0e536064d792f74bb2f0aabe6d3e35de3a30cc537c397da288e6
 Description:  Profile libremesh adhoc
 
 Package: profile-libremesh-default
-Version: git-20.289.57088-389613e
+Version: git-20.305.82751-fc79049
 Depends: libc, lime-system
 Section: lime
 Architecture: all
-Installed-Size: 1087
-Filename: profile-libremesh-default_git-20.289.57088-389613e_all.ipk
-Size: 1822
-SHA256sum: 0c2743215ede7db51fac551f645242281b983735a6abc6967ec08b98efa8d4ec
+Installed-Size: 1090
+Filename: profile-libremesh-default_git-20.305.82751-fc79049_all.ipk
+Size: 1823
+SHA256sum: 89106040538e06edf970c8a1a70b18ffdcd119d6e3fcc1a54b3c4cc176654e6c
 Description:  Default LibreMesh configuration
 
 Package: profile-libremesh-encrypt-11s
-Version: git-20.289.57088-389613e
+Version: git-20.305.82751-fc79049
 Depends: libc, lime-system, wpad-mesh-openssl
 Section: lime
 Architecture: all
-Installed-Size: 267
-Filename: profile-libremesh-encrypt-11s_git-20.289.57088-389613e_all.ipk
-Size: 1006
-SHA256sum: 23e2e923806836174aa523b36c8d50b46e6eb9f5876a59cd51ad1f22162f6985
+Installed-Size: 271
+Filename: profile-libremesh-encrypt-11s_git-20.305.82751-fc79049_all.ipk
+Size: 1018
+SHA256sum: acb2b80d7480cc5a07aaa910f8e35e9448f882e523a0d5dce7cbd5ee56680e85
 Description:  Use 802.11s for mesh and WPA3 encryption
 
