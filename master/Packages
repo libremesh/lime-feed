@@ -303,10 +303,10 @@ Version: -
 Depends: libc, dnsmasq-dhcpv6, ebtables, libuci-lua, lime-system, lua, kmod-ebtables, kmod-macvlan, shared-state, shared-state-dnsmasq_leases, kmod-ebtables-ipv6, luci-lib-nixio
 Section: opt
 Architecture: all
-Installed-Size: 1786
+Installed-Size: 1843
 Filename: lime-proto-anygw_-_all.ipk
-Size: 2617
-SHA256sum: 9c892530a8a655b27ce31382d61e7440992a4c1e826d0ab318ae7ae09531ed0c
+Size: 2639
+SHA256sum: b467cadb7896bd2a16e21fa10bcdfc1c7ce60e8d798bcba65a5768ef1e06c8cb
 Description:  LiMe anygw proto support
 
 Package: lime-proto-babeld
@@ -436,10 +436,10 @@ Version: -
 Depends: libc, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
 Section: opt
 Architecture: all
-Installed-Size: 24945
+Installed-Size: 24985
 Filename: lime-system_-_all.ipk
-Size: 25787
-SHA256sum: dcedf72a3468ac69fe392bba10585b1477a4a1d0484be5ebfdba4ceb23acefeb
+Size: 25803
+SHA256sum: 8418d644e180c8599f1f03856c9da1bff9c2a2e4810e3426224e3f35bc4e08de
 Description:  Basic system files for LiMe node
 
 Package: lime-webui
@@ -657,10 +657,10 @@ Version: -
 Depends: libc, lua, luci-lib-jsonc, shared-state
 Section: opt
 Architecture: all
-Installed-Size: 1434
+Installed-Size: 1376
 Filename: shared-state-dnsmasq_hosts_-_all.ipk
-Size: 2173
-SHA256sum: e3d4dc3fcdbaeddbc6f2d1c50611b80c948f6ea0c82f71daaaae8c393ff46368
+Size: 2134
+SHA256sum: 1d9ab884461801e79402a8f54d5420b7258741fd8d5cc814330e7b9a784003f8
 Description:  Syncronize dnsmasq hosts beween nodes.
 
 Package: shared-state-dnsmasq_leases
@@ -673,6 +673,18 @@ Filename: shared-state-dnsmasq_leases_-_all.ipk
 Size: 3505
 SHA256sum: ed7f9579b778511e0dfee727e9357f05595136ae123bf4885239be2c7621ab93
 Description:  Syncronize dnsmasq leases beween nodes.
+
+Package: shared-state-dnsmasq_servers
+Version: -
+Depends: libc, lua, luci-lib-jsonc, shared-state
+Section: opt
+Architecture: all
+Installed-Size: 1658
+Filename: shared-state-dnsmasq_servers_-_all.ipk
+Size: 2471
+SHA256sum: d4348d8bcff465c2ca3b7f7252f7df6b9f10b5d7f71f803aa065690554d8815e
+Description:  Generates 'server' lines in dnsmasq config, so that domain zones published
+ by other nodes in the mesh can be resolved transparently.
 
 Package: shared-state-network_nodes
 Version: unknown-1
