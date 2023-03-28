@@ -300,13 +300,13 @@ Description:  LiMe hardware detection usb radio support
 
 Package: lime-proto-anygw
 Version: -
-Depends: libc, dnsmasq-dhcpv6, ebtables, libuci-lua, lime-system, lua, kmod-ebtables, kmod-macvlan, shared-state, shared-state-dnsmasq_leases, kmod-ebtables-ipv6, luci-lib-nixio
+Depends: libc, ebtables-nft, dnsmasq-dhcpv6, kmod-nft-bridge, libuci-lua, lime-system, lua, kmod-macvlan, shared-state, shared-state-dnsmasq_leases, luci-lib-nixio
 Section: opt
 Architecture: all
-Installed-Size: 1843
+Installed-Size: 2011
 Filename: lime-proto-anygw_-_all.ipk
-Size: 2639
-SHA256sum: b467cadb7896bd2a16e21fa10bcdfc1c7ce60e8d798bcba65a5768ef1e06c8cb
+Size: 2814
+SHA256sum: 37bc5892aab0a1d2d9cf22a8c33fdfdfd7c45ace4fabe9fbeb474dfc021dd129
 Description:  LiMe anygw proto support
 
 Package: lime-proto-babeld
@@ -399,13 +399,13 @@ Description:  LiMe OLSR proto support (IPv4)
 
 Package: lime-proto-wan
 Version: unknown
-Depends: libc, lime-system, lua, libuci-lua, kmod-ipt-nat, iptables, luci-lib-nixio
+Depends: libc, firewall4, lime-system, lua, libuci-lua
 Section: lime
 Architecture: all
-Installed-Size: 790
+Installed-Size: 562
 Filename: lime-proto-wan_unknown_all.ipk
-Size: 1559
-SHA256sum: dd0b074fe0413fc8b74c03953bba40ed81a147a8350c0f694da2983896cdb3ca
+Size: 1320
+SHA256sum: 592c39c5c9d3facc11f0e1aa2f4321879c6b2d6a6313554a281a0c24a44c0897
 Description:  LiMe wan proto support
 
 Package: lime-report
@@ -413,10 +413,10 @@ Version: -
 Depends: libc
 Section: opt
 Architecture: all
-Installed-Size: 947
+Installed-Size: 921
 Filename: lime-report_-_all.ipk
-Size: 1725
-SHA256sum: 9a8893824cf40c9e8c94b521ca787ff98eb8df9a389e52555e32ddee767607a9
+Size: 1690
+SHA256sum: c3d4b95b00fbe4918a3fd589dc15e7fcdfee12e610f78644c00fd295e8fee960
 Description:  Outputs a report about the status and the main configuration
  of a LibreMesh node, useful for debugging and issues reporting.
 
@@ -433,13 +433,13 @@ Description:  Automatically configure wifi mesh and ap based on existing radios
 
 Package: lime-system
 Version: -
-Depends: libc, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
+Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
 Section: opt
 Architecture: all
-Installed-Size: 24985
+Installed-Size: 24309
 Filename: lime-system_-_all.ipk
-Size: 25803
-SHA256sum: 8418d644e180c8599f1f03856c9da1bff9c2a2e4810e3426224e3f35bc4e08de
+Size: 25181
+SHA256sum: 3b8968ba71d49002db82c0dec45fb4939be855b88640f91bfb6bb6c61bad9eb6
 Description:  Basic system files for LiMe node
 
 Package: lime-webui
