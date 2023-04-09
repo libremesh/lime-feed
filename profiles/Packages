@@ -1,34 +1,45 @@
 Package: profile-calafou-gateway
 Version: unknown
-Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, babeld-auto-gw-mode, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon
+Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, babeld-auto-gw-mode, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon, iperf3
 Section: lime
 Architecture: all
 Installed-Size: 463
 Filename: profile-calafou-gateway_unknown_all.ipk
-Size: 1460
-SHA256sum: c0e08cfc272100c03944877c22ae18f177445f62110f54deb5144b205e3e5086
+Size: 1467
+SHA256sum: 81a0c40904f9b71edbecb7085876b6bdf2081a84de289b6a0dd4f33f1bc18721
 Description:  Encryptable mesh and AP for Calafou outdoor node used as a gateway
+
+Package: profile-calafou-indoor2
+Version: unknown
+Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, babeld-auto-gw-mode, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon, iperf3
+Section: lime
+Architecture: all
+Installed-Size: 460
+Filename: profile-calafou-indoor2_unknown_all.ipk
+Size: 1496
+SHA256sum: 805f4a0019716060d31b901d786b7da7df11421cae2c522c177a1eb1db374978
+Description:  Encryptable mesh and AP for Calafou indoor nodes, second node in rooms with two nodes, 5 GHz channel clashing with the outdoor and gateway nodes
 
 Package: profile-calafou-indoor
 Version: unknown
-Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, babeld-auto-gw-mode, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon
+Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, babeld-auto-gw-mode, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon, iperf3
 Section: lime
 Architecture: all
-Installed-Size: 464
+Installed-Size: 461
 Filename: profile-calafou-indoor_unknown_all.ipk
-Size: 1450
-SHA256sum: e3f0c0632f49079435345f7f40b8ef266a4f671d537e84951fb1ea4baa393654
+Size: 1449
+SHA256sum: c010235267d2a34970eb0eb3ff8974701621bba08e516b1296e2b75e82dcd5f0
 Description:  Encryptable mesh and AP for Calafou indoor nodes
 
 Package: profile-calafou-outdoor
 Version: unknown
-Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon
+Depends: libc, lime-system, deferable-reboot, safe-reboot, wpad-openssl, shared-state-network_nodes, shared-state-dnsmasq_servers, lime-docs, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-hwd-ground-routing, lime-debug, prometheus-node-exporter-lua, prometheus-node-exporter-lua-openwrt, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-wifi-stations-extra, prometheus-node-exporter-lua-wifi-survey, prometheus-node-exporter-lua-wifi-params, prometheus-node-exporter-lua-location-latlon, iperf3
 Section: lime
 Architecture: all
 Installed-Size: 463
 Filename: profile-calafou-outdoor_unknown_all.ipk
-Size: 1429
-SHA256sum: 9b9cbf2e768e2713abe20490b46da60fbae8dc04e92ed70116783c14cb834a8a
+Size: 1438
+SHA256sum: 631a18b4a6df63d1e3a1f8faefc13da0d324986db2ef5b83304346f53f682ff6
 Description:  Encryptable mesh and AP for Calafou outdoor nodes
 
 Package: profile-es.hackmeeting.org-hm2019generic
@@ -36,10 +47,10 @@ Version: unknown
 Depends: libc, lime-system, prometheus-node-exporter-lua, prometheus-node-exporter-lua-wifi, prometheus-node-exporter-lua-wifi_stations, prometheus-node-exporter-lua-openwrt, lime-system, lime-proto-babeld, lime-proto-batadv, lime-proto-anygw, lime-proto-wan, lime-hwd-openwrt-wan, shared-state, hotplug-initd-services, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, shared-state-nodes_and_links, check-date-http, lime-app, lime-docs-minimal, first-boot-wizard, lime-docs, lime-hwd-ground-routing, lime-debug, ubus-lime-batman-adv, pirania, shared-state-pirania, shared-state-persist
 Section: lime
 Architecture: all
-Installed-Size: 844
+Installed-Size: 847
 Filename: profile-es.hackmeeting.org-hm2019generic_unknown_all.ipk
-Size: 1812
-SHA256sum: 52f00a29f6867595571316a540ad3900131bf3c74c5241e18711e9ccfd24d942
+Size: 1817
+SHA256sum: 3c33bf8420f29057ac076ffb201c8d50823db5937cd224a04d57d15c28757e5a
 Description:  Network used for Iberic Hackmeeting 2019 in Errekaleor
 
 Package: profile-freifunk-80211s-sae-batadv-only
@@ -47,10 +58,10 @@ Version: unknown
 Depends: libc, lime-system, wpad-mesh-wolfssl, lime-proto-batadv, lime-proto-anygw, shared-state, shared-state-bat_hosts, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, wifi-unstuck-wa
 Section: lime
 Architecture: all
-Installed-Size: 844
+Installed-Size: 843
 Filename: profile-freifunk-80211s-sae-batadv-only_unknown_all.ipk
-Size: 1660
-SHA256sum: a987d3253a3ecb0d43846a44bda0375693832c2403017ab7867a5b1d12510fa1
+Size: 1666
+SHA256sum: 41aefabd44d0d87b9d5b526f1a60413481957429dad49b50b5e10f6b0c0db071
 Description:  Use 802.11s with SAE for mesh, route with batman-adv only
 
 Package: profile-freifunk-80211s-sae-bmx7-batadv
@@ -60,8 +71,8 @@ Section: lime
 Architecture: all
 Installed-Size: 849
 Filename: profile-freifunk-80211s-sae-bmx7-batadv_unknown_all.ipk
-Size: 1733
-SHA256sum: 80f14f421d2233181c0e50371106cdc7cac89f25d698b67fc5940cd940ae86fa
+Size: 1727
+SHA256sum: 55d1ce2f2bfd4f8d1d82af0956a675009477fbee48b22167341306980ed8b094
 Description:  Use 802.11s with SAE for mesh, route with bmx7 and batman-adv
 
 Package: profile-freifunk-80211s-sae-bmx7-only
@@ -69,10 +80,10 @@ Version: unknown
 Depends: libc, lime-system, wpad-mesh-wolfssl, wpa-cli, bmx7, bmx7-iwinfo, bmx7-json, bmx7-sms, bmx7-table, bmx7-tun, bmx7-uci-config, bmx7-auto-gw-mode, lime-proto-bmx7, lime-proto-anygw, shared-state, shared-state-dnsmasq_hosts, shared-state-dnsmasq_leases, wifi-unstuck-wa
 Section: lime
 Architecture: all
-Installed-Size: 842
+Installed-Size: 841
 Filename: profile-freifunk-80211s-sae-bmx7-only_unknown_all.ipk
-Size: 1704
-SHA256sum: 1ad8f56883d029997a3c298ef3e262eb6f2336a53767cab13d97a2e1bf9359b0
+Size: 1700
+SHA256sum: ed2a7521424e11e3b4a31e4b8cd1cb4642cd2d3d63d9cba9ee9a2cc182091482
 Description:  Use 802.11s with SAE for mesh, route with bmx7 only
 
 Package: profile-libremesh-adhoc
@@ -80,10 +91,10 @@ Version: unknown
 Depends: libc, lime-system
 Section: lime
 Architecture: all
-Installed-Size: 308
+Installed-Size: 306
 Filename: profile-libremesh-adhoc_unknown_all.ipk
-Size: 1006
-SHA256sum: 6cd76353715c44b3ee2e81f4492c88f49b860b0b790b2c72e2767a4d643d6a1f
+Size: 1007
+SHA256sum: d0c4a1e4b8ee8f2eccf80aab15da898aaafa4c0a47343ac4d9faf37b29e13fb8
 Description:  Profile libremesh adhoc
 
 Package: profile-libremesh-default
@@ -93,8 +104,8 @@ Section: lime
 Architecture: all
 Installed-Size: 1142
 Filename: profile-libremesh-default_unknown_all.ipk
-Size: 1868
-SHA256sum: fbd7f2a5394bf966a5533a970e7239afe72035de9ba0527ff00a61b39d8f6bc7
+Size: 1864
+SHA256sum: b005636b6885ae655ea8c29542458db3f0828fe4274c10188cdf1e0ef91d82f3
 Description:  Default LibreMesh configuration
 
 Package: profile-libremesh-encrypt-11s
@@ -102,10 +113,10 @@ Version: unknown
 Depends: libc, lime-system, wpad-mesh-openssl
 Section: lime
 Architecture: all
-Installed-Size: 268
+Installed-Size: 267
 Filename: profile-libremesh-encrypt-11s_unknown_all.ipk
-Size: 997
-SHA256sum: f61bad96f3ad41ce480746c6b3d175053c3e80837282281e9b9e0561666cac4b
+Size: 993
+SHA256sum: 121fd2551c9eb03049278af8e8ae615f2aea5ba949be1fe3c533006ca65bcf43
 Description:  Use 802.11s for mesh and WPA3 encryption
 
 Package: profile-libremesh-suggested-packages
@@ -113,10 +124,10 @@ Version: unknown
 Depends: libc, lime-system, lime-docs-minimal, lime-app, lime-hwd-openwrt-wan, lime-proto-anygw, lime-proto-babeld, lime-proto-batadv, shared-state, shared-state-babeld_hosts, shared-state-bat_hosts, shared-state-nodes_and_links, babeld-auto-gw-mode, check-date-http, lime-docs, lime-hwd-ground-routing, lime-debug
 Section: lime
 Architecture: all
-Installed-Size: 96
+Installed-Size: 95
 Filename: profile-libremesh-suggested-packages_unknown_all.ipk
-Size: 954
-SHA256sum: d316d34f1ee43b940ff5adc18f4a7555829dabd035ec7392fb51fa4234eeafcd
+Size: 947
+SHA256sum: 670507ba6813913e7e6982c87377de0eb720fe782900a67cfca685657cb2475b
 Description:  Packages officially suggested on the LibreMesh.org website
 
 Package: profile-valsamoggia.ninux.org-vs-ninux-generic
@@ -126,7 +137,7 @@ Section: lime
 Architecture: all
 Installed-Size: 2516
 Filename: profile-valsamoggia.ninux.org-vs-ninux-generic_unknown_all.ipk
-Size: 3410
-SHA256sum: bd459c499a47e563b3537ffbe210e38f8527c8579d9238635602f7277705a886
+Size: 3405
+SHA256sum: 2f70bd1e4086c5fd8053439e3e6d186be41ffbb7c0bff5893de546199c0054f2
 Description:  Generic valsamoggia configuration
 
