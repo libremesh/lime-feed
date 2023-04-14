@@ -153,17 +153,17 @@ Description:  Distributed DNS system using bmx7 sms plugin
 
 Package: check-date-http
 Version: -
-Depends: libc, libuci-lua, lua, luci-lib-httpclient
+Depends: libc, libuci-lua, lua, random-numgen, luci-lib-httpclient
 Source: /home/runner/work/lime-packages/lime-packages/packages/check-date-http
 SourceName: check-date-http
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 1893
+Installed-Size: 1899
 Filename: check-date-http_-_all.ipk
-Size: 2778
-SHA256sum: bc882ad9a51af134c1028f130cae2104c1e9a4ca5be8d109dd00cc43ca9044ec
+Size: 2787
+SHA256sum: b4e8b1116f4b1cca4faeefa84033d2f7d3e226857809f8ad65938d3daed2b9da
 Description:  Check local time against a list of HTTP(s) services, if the time skew is
  more then 15 minutes, restart sysntpd to force time syncronization, or
  reset trought date command depending on configuration.
@@ -207,17 +207,17 @@ Description:  This deferable-reboot provides a deferable reboot mechanism. The s
 
 Package: eupgrade
 Version: unknown-1
-Depends: libc, lua, lime-system, luci-lib-jsonc, luci-lib-nixio, libubus-lua, libuci-lua
+Depends: libc, lua, lime-system, luci-lib-jsonc, luci-lib-nixio, libubus-lua, libuci-lua, random-numgen
 Source: /home/runner/work/lime-packages/lime-packages/packages/eupgrade
 SourceName: eupgrade
 Section: utils
 SourceDateEpoch: 1681127458
 Maintainer: Santiago Piccinini <spiccinini@altermundi.net>
 Architecture: all
-Installed-Size: 3289
+Installed-Size: 3295
 Filename: eupgrade_unknown-1_all.ipk
-Size: 4072
-SHA256sum: b0f84a7c5980f853bf6176db78f220ffedd1ed15eb55f935a6b1e00f7b20e393
+Size: 4082
+SHA256sum: f99cb271e8460734405c4f939a169f4e43c14b591fe2f9aacf75b3bcc93716d4
 Description:  This eupgrade provides semi automated firmware upgrades.
 
 Package: first-boot-wizard
@@ -237,7 +237,7 @@ Description:  Scans surrounding LibreMesh networks and joins them.
 
 Package: hotplug-initd-services
 Version: -
-Depends: libc, libubox-lua, libubus-lua, lua, luci-lib-nixio
+Depends: libc, libubox-lua, libubus-lua, random-numgen, lua, luci-lib-nixio
 Source: /home/runner/work/lime-packages/lime-packages/packages/hotplug-initd-services
 SourceName: hotplug-initd-services
 Section: opt
@@ -246,8 +246,8 @@ Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
 Installed-Size: 810
 Filename: hotplug-initd-services_-_all.ipk
-Size: 1639
-SHA256sum: 3714686544ecac9e4ed380316fc8d22615edeea17dff260500cd505c0559dec9
+Size: 1652
+SHA256sum: 8bf1eb0dd624be05277e31bee39f78f5040ddaa5b807c74b70bf4a08a980b8e6
 Description:  Provide trigger hotplug events when init.d services are started and
  stopped. Put your hooks into /etc/hotplug.d/initd/.
 
@@ -583,8 +583,8 @@ Maintainer: Gioacchino Mazzurco <gio@eigenlab.org>
 Architecture: all
 Installed-Size: 24317
 Filename: lime-system_-_all.ipk
-Size: 25183
-SHA256sum: 8fba163caf5038c8287dd0ae8fb965a4314122c80ba531791b7657881031f58d
+Size: 25185
+SHA256sum: 68382d3e699c39336f0c69f3b163a918d071e7c3ea5a7dd0b2d4b785c64eb9a7
 Description:  Basic system files for LiMe node
 
 Package: lime-webui
@@ -796,6 +796,24 @@ Description:  Collects the same statistics as prometheus-node-exporter-lua,
  pushes them using influx line protocol over TCP
  to a remote VictoriaMetrics server.
 
+Package: random-numgen
+Version: 0.1-1
+Depends: libc
+Source: /home/runner/work/lime-packages/lime-packages/packages/random-numgen
+SourceName: random-numgen
+License: GPL-3.0-or-later
+Section: utils
+SourceDateEpoch: 1681127458
+Maintainer: Ilario Gelmetti <ilario@sindominio.net>
+Architecture: x86_64
+Installed-Size: 337
+Filename: random-numgen_0.1-1_x86_64.ipk
+Size: 1170
+SHA256sum: e558b9aae48d8ca52958e5a07e206daebcef62353cde120288012e630e9b13dc
+Description:  Offers an alternative to the RANDOM shell variable,
+ generating a pseudo-random integer number from 0 to
+ 65535 using /dev/urandom as a random data source.
+
 Package: safe-reboot
 Version: -
 Depends: libc
@@ -836,109 +854,109 @@ Description:  safe-upgrade provides safe firmware upgrades using two partitions 
 
 Package: shared-state-babeld_hosts
 Version: -
-Depends: libc, hotplug-initd-services, lua, luci-lib-jsonc, shared-state
+Depends: libc, hotplug-initd-services, random-numgen, lua, luci-lib-jsonc, shared-state
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-babeld_hosts
 SourceName: shared-state-babeld_hosts
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 1287
+Installed-Size: 1293
 Filename: shared-state-babeld_hosts_-_all.ipk
-Size: 2101
-SHA256sum: 0988c31852bcef6033abbb2bd0fb24dd646a0053fe9872f613d51aef9098c44e
+Size: 2118
+SHA256sum: 6112eb345dba98f4b769101e9b7ecebe19cd7591658e45be71e0eb4e1292db1b
 Description:  Maintain a shared babel_id-hostname translation table, provides also
  bab2host and host2bab commands.
 
 Package: shared-state-bat_hosts
 Version: -
-Depends: libc, lua, luci-lib-jsonc, shared-state, lime-system, luci-lib-nixio, libubus-lua
+Depends: libc, lua, luci-lib-jsonc, random-numgen, shared-state, lime-system, luci-lib-nixio, libubus-lua
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-bat_hosts
 SourceName: shared-state-bat_hosts
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 2999
+Installed-Size: 3004
 Filename: shared-state-bat_hosts_-_all.ipk
-Size: 3795
-SHA256sum: e040b51455279d734aceea38ab163cac183ad981f43df5185af820b6bab7eceb
+Size: 3811
+SHA256sum: 3b4b51823935fc255a403bcdaa57d446353de1dd7d5d988915682b84ce87190c
 Description:  Syncronize bat-hosts beween nodes, provides also mac2bat and bat2mac.
 
 Package: shared-state-dnsmasq_hosts
 Version: -
-Depends: libc, lua, luci-lib-jsonc, shared-state
+Depends: libc, lua, luci-lib-jsonc, random-numgen, shared-state
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-dnsmasq_hosts
 SourceName: shared-state-dnsmasq_hosts
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 1375
+Installed-Size: 1382
 Filename: shared-state-dnsmasq_hosts_-_all.ipk
-Size: 2129
-SHA256sum: 69b419fcd38bf61c99a954e6e1f4478e08af3223ce75ffb0e67fd11107fe81c7
+Size: 2152
+SHA256sum: 7df1768e2e7782cf1c48b155e7a6f8d3d2f9d5a737580005dc5aeee2aee83b8b
 Description:  Syncronize dnsmasq hosts beween nodes.
 
 Package: shared-state-dnsmasq_leases
 Version: -
-Depends: libc, libuci-lua, lua, luci-lib-jsonc, shared-state, shared-state-dnsmasq_hosts, luci-lib-nixio
+Depends: libc, libuci-lua, lua, random-numgen, luci-lib-jsonc, shared-state, shared-state-dnsmasq_hosts, luci-lib-nixio
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-dnsmasq_leases
 SourceName: shared-state-dnsmasq_leases
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 2721
+Installed-Size: 2726
 Filename: shared-state-dnsmasq_leases_-_all.ipk
-Size: 3511
-SHA256sum: cd4a02453855fca36e284d47a98062e3d3a783236e0ca7b1b105aae45922e039
+Size: 3529
+SHA256sum: 9c3043d77e14393b75b1bda8cd6f4ee91f0471644aeb17d4026590856fab8fed
 Description:  Syncronize dnsmasq leases beween nodes.
 
 Package: shared-state-dnsmasq_servers
 Version: -
-Depends: libc, lua, luci-lib-jsonc, shared-state
+Depends: libc, lua, luci-lib-jsonc, random-numgen, shared-state
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-dnsmasq_servers
 SourceName: shared-state-dnsmasq_servers
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gui iribarren <gui@altermundi.net>
 Architecture: all
-Installed-Size: 1664
+Installed-Size: 1667
 Filename: shared-state-dnsmasq_servers_-_all.ipk
-Size: 2469
-SHA256sum: 4a7105ec6bcbd7e569a652039622c09085dbfe03de610c82459090dda9fb3453
+Size: 2485
+SHA256sum: 0a1b23c45c7f28fdb6e4934aef015fe0bd2a43cafb5ec12f1c2b3d220325729e
 Description:  Generates 'server' lines in dnsmasq config, so that domain zones published
  by other nodes in the mesh can be resolved transparently.
 
 Package: shared-state-network_nodes
 Version: unknown-1
-Depends: libc, shared-state, shared-state-nodes_and_links, lime-system, luci-lib-jsonc, libubus-lua
+Depends: libc, shared-state, shared-state-nodes_and_links, lime-system, luci-lib-jsonc, libubus-lua, random-numgen
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-network_nodes
 SourceName: shared-state-network_nodes
 Section: utils
 SourceDateEpoch: 1681127458
 Maintainer: Germán Ferrero <germanferrero@altermundi.net>
 Architecture: all
-Installed-Size: 2652
+Installed-Size: 2658
 Filename: shared-state-network_nodes_unknown-1_all.ipk
-Size: 3484
-SHA256sum: 47f0779f7a695095a2de362c16d5dddfd991861bafb9da0b64f62d53d38e8cf9
+Size: 3501
+SHA256sum: db6e9510cab088e3fc68b24f8bcd1c3a3abf0e7f9b7cd7825a4e2de245ced299
 Description:  This shared-state-network_nodes provides shared state database of all times network nodes.
 
 Package: shared-state-nodes_and_links
 Version: -
-Depends: libc, lua, luci-lib-jsonc, shared-state, ubus-lime-location
+Depends: libc, lua, luci-lib-jsonc, random-numgen, shared-state, ubus-lime-location
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-nodes_and_links
 SourceName: shared-state-nodes_and_links
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Nicolas Pace <nico@libre.ws>
 Architecture: all
-Installed-Size: 1056
+Installed-Size: 1060
 Filename: shared-state-nodes_and_links_-_all.ipk
-Size: 1828
-SHA256sum: 6d669b2fb9eb6b03d0904a668d4c697874e7f48be106c650175554fa6702e4ad
+Size: 1844
+SHA256sum: d175cbf05e7d3dab82172916c1bee48b3f5d748abf47feba48387a784ecc533a
 Description:  Syncronize nodes_and_links beween nodes.
 
 Package: shared-state-persist
@@ -958,32 +976,32 @@ Description:  Detects block-mount storage devices and configures shared-state so
 
 Package: shared-state-pirania
 Version: -
-Depends: libc, lua, luci-lib-jsonc, shared-state, pirania
+Depends: libc, lua, luci-lib-jsonc, random-numgen, shared-state, pirania
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state-pirania
 SourceName: shared-state-pirania
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Marcos Gutierrez <gmacos@altermundi.net>
 Architecture: all
-Installed-Size: 2093
+Installed-Size: 2099
 Filename: shared-state-pirania_-_all.ipk
-Size: 2869
-SHA256sum: 87b9e48cc23fb5eb9c1d22bdd4390015a0b4dd7258688c5d0841bc71c6ba7bec
+Size: 2886
+SHA256sum: 06a8057f11ba0bad4904d8eec3b8f0cda0978f75d2b88e742514acf045ddbd7d
 Description:  Syncronize valid pirania vauchers beween nodes
 
 Package: shared-state
 Version: -
-Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch
+Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch, random-numgen
 Source: /home/runner/work/lime-packages/lime-packages/packages/shared-state
 SourceName: shared-state
 Section: opt
 SourceDateEpoch: 1681127458
 Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
 Architecture: all
-Installed-Size: 5704
+Installed-Size: 5707
 Filename: shared-state_-_all.ipk
-Size: 6499
-SHA256sum: 1aa1851ac7f90b094ef8df7fa7dc979ef813ebbb676ff45f7e90423df3b4c316
+Size: 6510
+SHA256sum: c0276047855a6f96462aefa7624985479c1821cd424a83b0d2daf1acc1f83743
 Description:  LiMe style minimal unsecured CRDT to share light state between nodes
 
 Package: soporteremoto
