@@ -216,13 +216,13 @@ Description:  Light webApp for LibreMesh over uhttpd
 
 Package: lime-debug
 Version: -
-Depends: libc, bandwidth-test, busybox, ethtool, iwinfo, iw, mtr, ip, iputils-ping, iputils-ping, sprunge, safe-reboot, netperf, pv, tcpdump-mini, bwm-ng, lime-report
+Depends: libc, bandwidth-test, busybox, ethtool, iwinfo, iw, mtr, ip, iputils-ping, iputils-ping, sprunge, safe-reboot, netperf, pv, tcpdump-mini, bwm-ng, lime-report, iperf3, jq
 Section: opt
 Architecture: all
 Installed-Size: 97
 Filename: lime-debug_-_all.ipk
-Size: 906
-SHA256sum: 802c48151d365e58185f0ed33a5a2de7da90e7356ac158b515a9d050746837d6
+Size: 920
+SHA256sum: f604cb92657bd8928745ed2e63b74bb5ceac063302f55b0ad02aec9b679ca1ea
 Description:  Debug utilities for LibreMesh nodes
 
 Package: lime-docs-it
@@ -241,10 +241,10 @@ Version: -
 Depends: libc
 Section: opt
 Architecture: all
-Installed-Size: 6934
+Installed-Size: 7114
 Filename: lime-docs-minimal_-_all.ipk
-Size: 7756
-SHA256sum: 430798061fbfb6e3a027c3bb530e9848bc3def487c9d8519f63552acc116b194
+Size: 7937
+SHA256sum: b81cab8575454e75fb27b82f2fea9a52051fe31f974053e35fea32ccb4119c74
 Description:  Minimal offline English documentation for LibreMesh firmware containing
  just a commented example of the main config file.
 
@@ -325,10 +325,10 @@ Version: unknown
 Depends: libc, lime-system, lua, libuci-lua, kmod-batman-adv, luci-lib-nixio
 Section: lime
 Architecture: all
-Installed-Size: 1333
+Installed-Size: 1498
 Filename: lime-proto-batadv_unknown_all.ipk
-Size: 2107
-SHA256sum: 49e30010b32485e3eb74981a1183b00162828646621267436af69e1e03151a1f
+Size: 2276
+SHA256sum: 0516d2e7594acae7b2ecc9c75f5f32e5984b29ed5995668bca6d0888e85cf320
 Description:  LiMe batman-adv proto support
 
 Package: lime-proto-bgp
@@ -413,10 +413,10 @@ Version: -
 Depends: libc
 Section: opt
 Architecture: all
-Installed-Size: 922
+Installed-Size: 966
 Filename: lime-report_-_all.ipk
-Size: 1699
-SHA256sum: ed8345a2e875463c638bf8e7cda8fc5c5169db369bb4cae1088749e5f73a238d
+Size: 1743
+SHA256sum: 70ae93fb534711917ada7506f24ccf0df1eaf50ec9ac994abbbba9a33fbbfa78
 Description:  Outputs a report about the status and the main configuration
  of a LibreMesh node, useful for debugging and issues reporting.
 
@@ -436,10 +436,10 @@ Version: -
 Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
 Section: opt
 Architecture: all
-Installed-Size: 24301
+Installed-Size: 24318
 Filename: lime-system_-_all.ipk
-Size: 25171
-SHA256sum: 24d2ac16b974b3801a793cbc072089bc972c383d5c926f2a68caf580fc3d9f51
+Size: 25190
+SHA256sum: 6a330205c40c8ee8d8627934d218be9e25c149587bafca01ba2716d9a7310dd2
 Description:  Basic system files for LiMe node
 
 Package: lime-webui
