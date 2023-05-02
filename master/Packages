@@ -300,13 +300,13 @@ Description:  LiMe hardware detection usb radio support
 
 Package: lime-proto-anygw
 Version: -
-Depends: libc, ebtables-nft, dnsmasq-dhcpv6, kmod-nft-bridge, libuci-lua, lime-system, lua, kmod-macvlan, shared-state, shared-state-dnsmasq_leases, luci-lib-nixio
+Depends: libc, dnsmasq-dhcpv6, kmod-nft-bridge, libuci-lua, lime-system, lua, kmod-macvlan, shared-state, shared-state-dnsmasq_leases, luci-lib-nixio, firewall4
 Section: opt
 Architecture: all
-Installed-Size: 2011
+Installed-Size: 2108
 Filename: lime-proto-anygw_-_all.ipk
-Size: 2812
-SHA256sum: a9e68ef6be7bbafee6812c64c0fbac2aaa7ade8e4e9df991bfbceaf5c5601f44
+Size: 2924
+SHA256sum: e9c0c8f7f2e661e3293a48b17209098e9eecb3b88b332efac311831b89865837
 Description:  LiMe anygw proto support
 
 Package: lime-proto-babeld
@@ -355,13 +355,13 @@ Description:  LiMe Bmx6 proto support
 
 Package: lime-proto-bmx7
 Version: unknown
-Depends: libc, bmx7, bmx7-json, bmx7-sms, bmx7-table, bmx7-uci-config, bmx7-tun, lime-system, lua, libuci-lua, kmod-ebtables-ipv6, ebtables, luci-lib-nixio
+Depends: libc, bmx7, bmx7-json, bmx7-sms, bmx7-table, bmx7-uci-config, bmx7-tun, lime-system, lua, libuci-lua, luci-lib-nixio, kmod-nft-bridge, firewall4
 Section: lime
 Architecture: all
-Installed-Size: 2893
+Installed-Size: 3068
 Filename: lime-proto-bmx7_unknown_all.ipk
-Size: 3693
-SHA256sum: 1da25f5f8e4e62242198844363adb5f0803359d8a5213f7bb47b020a16107ecb
+Size: 3874
+SHA256sum: 9bc4d013d0dc32a65de07f2c666b8d9d17166782ea648a128d1e54f4e3684e1d
 Description:  LiMe Bmx7 proto support
 
 Package: lime-proto-olsr2
@@ -438,8 +438,8 @@ Section: opt
 Architecture: all
 Installed-Size: 24318
 Filename: lime-system_-_all.ipk
-Size: 25186
-SHA256sum: dc44c94e3c00f2cfca318b486906bc8324d4178e1d4ae37046effd63c9db9d90
+Size: 25187
+SHA256sum: 0172a8b0390ac574b10f6eee94ecfe3cd991615cfe8422b7cf6ce89a1403ea0e
 Description:  Basic system files for LiMe node
 
 Package: lime-webui
