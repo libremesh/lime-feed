@@ -1,0 +1,36 @@
+Package: lime-system
+Version: 2024-03-28-1711622375
+Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
+Section: opt
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 133120
+Filename: lime-system_2024-03-28-1711622375_all.ipk
+Size: 25700
+SHA256sum: b159d63aeee542b99ff604bdb3aa311da12306ec8a80d3604d24f2d4d4c4cbed
+Description:  Basic system files for LiMe node
+
+Package: shared-state-async
+Version: 2024-03-28-1711622375
+Depends: libc, libstdcpp6
+License: AGPL-3.0
+Section: opt
+Architecture: arm_arm926ej-s
+Installed-Size: 215040
+Filename: shared-state-async_2024-03-28-1711622375_arm_arm926ej-s.ipk
+Size: 92563
+SHA256sum: 1edbc713e8a918dd3cf1ea271d3305248f3214241c8c5ba11dc02618d6f5df08
+Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+
+Package: shared-state-bat_hosts
+Version: 2024-03-28-1711622375
+Depends: libc, libubus-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, shared-state-async
+Section: opt
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 30720
+Filename: shared-state-bat_hosts_2024-03-28-1711622375_all.ipk
+Size: 3396
+SHA256sum: 8d808a736e1a3f1d0255d61a748f735cd1aa31234c5dc33af717367032ebbede
+Description:  Syncronize bat-hosts beween nodes, provides also mac2bat and bat2mac.
+
