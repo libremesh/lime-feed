@@ -1,0 +1,34 @@
+Package: lime-system
+Version: 2024-12-10-1733846299
+Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc
+Section: opt
+Architecture: all
+Installed-Size: 24800
+Filename: lime-system_2024-12-10-1733846299_all.ipk
+Size: 25678
+SHA256sum: 800a7d37e1832f60923fccbb811fb606f8e5218a951d5e6513c9da1ef59fb807
+Description:  Basic system files for LiMe node
+
+Package: shared-state-async
+Version: 2024-12-10-1733846299
+Depends: libc, libstdcpp6
+License: AGPL-3.0
+Section: opt
+Architecture: i386_pentium-mmx
+Installed-Size: 93059
+Filename: shared-state-async_2024-12-10-1733846299_i386_pentium-mmx.ipk
+Size: 93976
+SHA256sum: 34de30a3ed6d104bc8bed252ff1617450768b6c5b0d1ec60af0a5fc67b87f3f3
+Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+
+Package: shared-state-bat_hosts
+Version: 2024-12-10-1733846299
+Depends: libc, libubus-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, shared-state-async
+Section: opt
+Architecture: all
+Installed-Size: 2592
+Filename: shared-state-bat_hosts_2024-12-10-1733846299_all.ipk
+Size: 3384
+SHA256sum: 88d764c4a5fbeb4d0e94c58006988c28c35d00368b32badb8923d8bf0ea83db0
+Description:  Syncronize bat-hosts beween nodes, provides also mac2bat and bat2mac.
+
