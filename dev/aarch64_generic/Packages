@@ -1,0 +1,29 @@
+Package: shared-state-async-static
+Version: ~use-sta-r1
+Depends: libc
+Provides: shared-state-async
+License: AGPL-3.0-only
+Section: opt
+URL: https://github.com/libremesh/shared-state-async
+Architecture: aarch64_generic
+Installed-Size: 747520
+Filename: shared-state-async-static_~use-sta-r1_aarch64_generic.ipk
+Size: 296108
+SHA256sum: e60bb4f6b9c97fd618e885cc9146dcbd89cf035eea7c38be8c9bb201e431ed8c
+Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
+ This variant is statically linked against the C++ standard library.
+
+Package: shared-state-async
+Version: ~use-sta-r1
+Depends: libc, libstdcpp6
+Conflicts: shared-state-async-static
+License: AGPL-3.0-only
+Section: opt
+URL: https://github.com/libremesh/shared-state-async
+Architecture: aarch64_generic
+Installed-Size: 348160
+Filename: shared-state-async_~use-sta-r1_aarch64_generic.ipk
+Size: 141596
+SHA256sum: 6a326f93464fb7bb9bd458716f4d6b6f8cdb4fdcaa737db0e4167cab67111674
+Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
+

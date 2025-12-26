@@ -1,0 +1,29 @@
+Package: shared-state-async-static
+Version: ~use-sta-r1
+Depends: libc
+Provides: shared-state-async
+License: AGPL-3.0-only
+Section: opt
+URL: https://github.com/libremesh/shared-state-async
+Architecture: arm_cortex-a9_neon
+Installed-Size: 593920
+Filename: shared-state-async-static_~use-sta-r1_arm_cortex-a9_neon.ipk
+Size: 260310
+SHA256sum: 680fd05c9c9cd67e09e5e467f56af195ad07de1cbdbac6839ddfeb96f043be8e
+Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
+ This variant is statically linked against the C++ standard library.
+
+Package: shared-state-async
+Version: ~use-sta-r1
+Depends: libc, libstdcpp6
+Conflicts: shared-state-async-static
+License: AGPL-3.0-only
+Section: opt
+URL: https://github.com/libremesh/shared-state-async
+Architecture: arm_cortex-a9_neon
+Installed-Size: 296960
+Filename: shared-state-async_~use-sta-r1_arm_cortex-a9_neon.ipk
+Size: 131950
+SHA256sum: 631b71da72d23858fe50d8c2e346409e2f40d866cf6a067cb59ce1a074116106
+Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
+
