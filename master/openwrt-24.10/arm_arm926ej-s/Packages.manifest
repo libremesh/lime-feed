@@ -1,16 +1,49 @@
+Package: lime-system
+Version: 26.282.51351~d6bcb83
+Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc, jq, rpcd-mod-rpcsys, rpcd
+Source: /feed/packages/lime-system
+SourceName: lime-system
+Section: opt
+SourceDateEpoch: 1791555351
+URL: http://libremesh.org
+Maintainer: Gioacchino Mazzurco <gio@eigenlab.org>
+Architecture: all
+Installed-Size: 133120
+Filename: lime-system_26.282.51351~d6bcb83_all.ipk
+Size: 23250
+SHA256sum: a71e9e3abad5aaa79fd80f0d63ccd0e19b2ed7ebba9943bf0528304e98bbeacf
+Description:  LibreMesh is a modular meta-firmware this package provide the core of it
+ which articulates all LiMe modules around it
+
 Package: shared-state-async
 Version: 2024.05.13~db58e3d-r1
-Depends: libc, libstdcpp6
+Depends: libc, libstdcpp6, shared-state
 Source: /feed/packages/shared-state-async
 SourceName: shared-state-async
 License: AGPL-3.0-only
 Section: opt
-SourceDateEpoch: 1786360775
+SourceDateEpoch: 1791555351
 Maintainer: Asociación Civil Altermundi <info@altermundi.net>
 Architecture: arm_arm926ej-s
-Installed-Size: 225280
+Installed-Size: 215040
 Filename: shared-state-async_2024.05.13~db58e3d-r1_arm_arm926ej-s.ipk
-Size: 94337
-SHA256sum: 39160c2e1a04c14825036800c2ab6fdfc2703b3fbb2d4d49f9bb7d8ac4c6deaf
+Size: 93122
+SHA256sum: a51d1093af59227a26670902bf19ea55b279f5ed56f25e17c52e9c27c92cb23c
 Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+
+Package: shared-state
+Version: 26.282.51351~d6bcb83
+Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch, uhttpd
+Source: /feed/packages/shared-state
+SourceName: shared-state
+Section: opt
+SourceDateEpoch: 1791555351
+URL: http://libremesh.org
+Maintainer: Gioacchino Mazzurco <gio@altermundi.net>
+Architecture: all
+Installed-Size: 40960
+Filename: shared-state_26.282.51351~d6bcb83_all.ipk
+Size: 6000
+SHA256sum: 669e0b3cc166c867df31c00cf2c8991ed31f3c20a09eaa0312fed7ea8eaf09bb
+Description:  LiMe style minimal unsecured CRDT to share light state between nodes
 

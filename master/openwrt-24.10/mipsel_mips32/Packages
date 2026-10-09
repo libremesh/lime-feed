@@ -1,12 +1,37 @@
+Package: lime-system
+Version: 26.282.51351~d6bcb83
+Depends: libc, firewall4, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc, jq, rpcd-mod-rpcsys, rpcd
+Section: opt
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 133120
+Filename: lime-system_26.282.51351~d6bcb83_all.ipk
+Size: 23248
+SHA256sum: 1460220f6c838256f77994879fe4270eb9574249458e0e9f7e0bdd8a66c46a9e
+Description:  LibreMesh is a modular meta-firmware this package provide the core of it
+ which articulates all LiMe modules around it
+
 Package: shared-state-async
 Version: 2024.05.13~db58e3d-r1
-Depends: libc, libstdcpp6
+Depends: libc, libstdcpp6, shared-state
 License: AGPL-3.0-only
 Section: opt
 Architecture: mipsel_mips32
 Installed-Size: 286720
 Filename: shared-state-async_2024.05.13~db58e3d-r1_mipsel_mips32.ipk
-Size: 95642
-SHA256sum: 43967a2072f88c670eb34735d6b1d408d3dac2f04b267a9a2d8cc5b06dfd4849
+Size: 94633
+SHA256sum: 06373969573e1e8d62c84e78089873f00620750c6eccb5e11b214323e1939036
 Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+
+Package: shared-state
+Version: 26.282.51351~d6bcb83
+Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch, uhttpd
+Section: opt
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 40960
+Filename: shared-state_26.282.51351~d6bcb83_all.ipk
+Size: 6000
+SHA256sum: 669e0b3cc166c867df31c00cf2c8991ed31f3c20a09eaa0312fed7ea8eaf09bb
+Description:  LiMe style minimal unsecured CRDT to share light state between nodes
 
