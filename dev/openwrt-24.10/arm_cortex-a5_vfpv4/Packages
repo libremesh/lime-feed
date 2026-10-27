@@ -1,30 +1,37 @@
-Package: shared-state-async-static
-Version: 2025.09.10~a3e4603-r1
-Depends: libc
-Conflicts: shared-state-async
-Provides: shared-state-async
-License: AGPL-3.0-only
+Package: lime-system
+Version: 26.300.60437~bed53ec
+Depends: libc, firewall4, kmod-macvlan, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc, rpcd-mod-rpcsys, rpcd
 Section: opt
-URL: https://github.com/libremesh/shared-state-async
-Architecture: arm_cortex-a5_vfpv4
-Installed-Size: 593920
-Filename: shared-state-async-static_2025.09.10~a3e4603-r1_arm_cortex-a5_vfpv4.ipk
-Size: 258907
-SHA256sum: 9b885e2d1f0b35c288e75554eb78262c615f54a0f40e7b3813ba9eec61d906e4
-Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
- This variant is statically linked against the C++ standard library.
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 133120
+Filename: lime-system_26.300.60437~bed53ec_all.ipk
+Size: 23328
+SHA256sum: 2974163f2b15dcd05b268a6f00c99ea4dca47cb295b97165cd63667332364a8d
+Description:  LibreMesh is a modular meta-firmware this package provide the core of it
+ which articulates all LiMe modules around it
 
 Package: shared-state-async
-Version: 2025.09.10~a3e4603-r1
-Depends: libc, libstdcpp6
-Conflicts: shared-state-async-static
+Version: 2024.05.13~db58e3d-r1
+Depends: libc, libstdcpp6, shared-state
 License: AGPL-3.0-only
 Section: opt
-URL: https://github.com/libremesh/shared-state-async
 Architecture: arm_cortex-a5_vfpv4
-Installed-Size: 296960
-Filename: shared-state-async_2025.09.10~a3e4603-r1_arm_cortex-a5_vfpv4.ipk
-Size: 130598
-SHA256sum: 58e81625a419b730ba44cdbb97f57a42b631797fa456fd89fc693c86cfdaf04a
-Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
+Installed-Size: 215040
+Filename: shared-state-async_2024.05.13~db58e3d-r1_arm_cortex-a5_vfpv4.ipk
+Size: 91956
+SHA256sum: e1a4a89603db15f98e4dd9d9df52b9644bea6c86d893f032343eb8e1d0cc9be7
+Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+
+Package: shared-state
+Version: 26.300.60437~bed53ec
+Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch, uhttpd
+Section: opt
+URL: http://libremesh.org
+Architecture: all
+Installed-Size: 40960
+Filename: shared-state_26.300.60437~bed53ec_all.ipk
+Size: 5993
+SHA256sum: 929e1858e8774634cb31b8c6e98e2998f9d1ec69f8c779567aaab6b6dd190394
+Description:  LiMe style minimal unsecured CRDT to share light state between nodes
 
