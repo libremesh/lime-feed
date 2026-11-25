@@ -1,37 +1,38 @@
 Package: lime-system
-Version: 26.300.60437~bed53ec
+Version: 26.329.56298~0246bd2
 Depends: libc, firewall4, kmod-macvlan, libiwinfo-lua, lua, libuci-lua, luci-lib-ip, luci-lib-nixio, luci-lib-jsonc, rpcd-mod-rpcsys, rpcd
 Section: opt
 URL: http://libremesh.org
 Architecture: all
 Installed-Size: 133120
-Filename: lime-system_26.300.60437~bed53ec_all.ipk
-Size: 23336
-SHA256sum: 824fe8614d4cfb73b510a30ea6577a15f107dd798580de0f54badc843485a0dc
+Filename: lime-system_26.329.56298~0246bd2_all.ipk
+Size: 23800
+SHA256sum: d22f940e2eb56bd1fd16cd510bffc8d8b1daa0053f5a7690f9384b1f8cb180a2
 Description:  LibreMesh is a modular meta-firmware this package provide the core of it
  which articulates all LiMe modules around it
 
 Package: shared-state-async
-Version: 2024.05.13~db58e3d-r1
-Depends: libc, libstdcpp6, shared-state
+Version: 2026.11.24~c294a16-r1
+Depends: libc, shared-state
 License: AGPL-3.0-only
 Section: opt
+URL: https://github.com/libremesh/shared-state-async
 Architecture: arm_cortex-a7_neon-vfpv4
-Installed-Size: 215040
-Filename: shared-state-async_2024.05.13~db58e3d-r1_arm_cortex-a7_neon-vfpv4.ipk
-Size: 91343
-SHA256sum: b6f7b25afa0e80194a47f68e22965503342521384b58414aed424fd4a25036e5
-Description:  shared-state re-written in C++20 and corotuines to handle information exchange between network nodes more efficiently.
+Installed-Size: 501760
+Filename: shared-state-async_2026.11.24~c294a16-r1_arm_cortex-a7_neon-vfpv4.ipk
+Size: 217714
+SHA256sum: 343c26134c336a0643b6f5fad8a2cd1d362cfd22779f948e1818049e548db6d0
+Description:  shared-state re-written in C++20 and coroutines to handle information exchange between network nodes more efficiently.
 
 Package: shared-state
-Version: 26.300.60437~bed53ec
+Version: 26.329.56298~0246bd2
 Depends: libc, libuci-lua, lime-system, lua, luci-lib-jsonc, luci-lib-nixio, iputils-ping, uclient-fetch, uhttpd
 Section: opt
 URL: http://libremesh.org
 Architecture: all
 Installed-Size: 40960
-Filename: shared-state_26.300.60437~bed53ec_all.ipk
-Size: 5993
-SHA256sum: 929e1858e8774634cb31b8c6e98e2998f9d1ec69f8c779567aaab6b6dd190394
+Filename: shared-state_26.329.56298~0246bd2_all.ipk
+Size: 6006
+SHA256sum: a2271cf82ca206b2a440ffca6038e7bf653074e4ec561579d509ae794300c274
 Description:  LiMe style minimal unsecured CRDT to share light state between nodes
 
